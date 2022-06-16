@@ -2,9 +2,9 @@
   const memoized = (fn) => {
     const cache = {};
     return (...args) => {
-      const n = args[0];
-      if (!(n in cache)) cache[n] = fn(n);
-      return cache[n];
+      const value = args[0];
+      if (!(value in cache)) cache[value] = fn(value);
+      return cache[value];
     };
   };
 
