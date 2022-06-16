@@ -1,5 +1,5 @@
 {
-  const memoized = (fn) => {
+  const memoized = (fn: Function) => {
     const cache = {};
     return (...args) => {
       const value = args[0];
