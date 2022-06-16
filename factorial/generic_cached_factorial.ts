@@ -1,8 +1,8 @@
 {
   const memoized = (fn) => {
-    let cache = {};
+    const cache = {};
     return (...args) => {
-      let n = args[0];
+      const n = args[0];
       if (!(n in cache)) cache[n] = fn(n);
       return cache[n];
     };
