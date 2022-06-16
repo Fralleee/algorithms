@@ -1,10 +1,10 @@
 {
-  const binarySearch = (list: number[] = [], n: number = 0): number => {
+  const binarySearch = (arr: number[] = [], n: number = 0): number => {
     let min = 0;
-    let max = list.length;
+    let max = arr.length;
     while (min < max) {
       const index = Math.floor((min + max) / 2);
-      const value = list[index];
+      const value = arr[index];
 
       if (value === n) return index;
 
